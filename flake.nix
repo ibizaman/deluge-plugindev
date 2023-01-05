@@ -83,7 +83,7 @@
       apps.${system}.default =
         let
           create_plugin = pkgs.writeScript "create_plugin" ''
-            ${pythonEnv.interpreter} ${deluge}/bin/create_plugin.py
+            ${pythonEnv.interpreter} ${deluge}/bin/create_plugin.py "$@"
             '';
         in {
           type = "app";
