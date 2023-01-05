@@ -1,0 +1,45 @@
+{
+  "nodes": {
+    "delugesource": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657455641,
+        "narHash": "sha256-b/OOnNYJV/RbfdHvsrqNhoIFpcdbInaN2GZbWQ7YQ2k=",
+        "ref": "master",
+        "rev": "0b5f45b486e8e974ba8a0b1d6e8edcd124fca62a",
+        "revCount": 8980,
+        "type": "git",
+        "url": "git://deluge-torrent.org/deluge.git"
+      },
+      "original": {
+        "ref": "master",
+        "type": "git",
+        "url": "git://deluge-torrent.org/deluge.git"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1672501226,
+        "narHash": "sha256-jzR7tUl9VZU77RpXKjG8V7VT9PVoaK8FmJnb+eNTm3Q=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "5353b10bd9a05533a94cf2e5629cf18b0af089dc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "delugesource": "delugesource",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
