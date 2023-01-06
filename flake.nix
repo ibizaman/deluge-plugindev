@@ -62,6 +62,7 @@
 
           postInstall = ''
           cp deluge/scripts/create_plugin.py $out/bin
+          sed -i 's|/bin/bash|${pkgs.bash}/bin/bash|' $out/bin/create_plugin.py
           '';
 
           meta = with pkgs.lib; {
