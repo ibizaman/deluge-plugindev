@@ -52,3 +52,9 @@ nix run nixpkgs#killall .deluged-wrapped
 nix run github:ibizaman/deluge-plugindev#deluged -- \
     --config .config
 ```
+
+And you'll see the plugin:
+
+![Plugin pane with the new plugin available](/plugin_screenshot.png)
+
+Happy hacking!
